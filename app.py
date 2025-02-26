@@ -46,7 +46,7 @@ for i in range(1, row + 1):
         EndDID = ""
 
 #assign DID to call routing
-for j in range(5,int((row/100)+1)):
+for j in range(0,int((row/100)+1)):
     responseCallRouting = getCallRouting.callRouting(access_token, callRoutingId, ENVIRONMENT)
     if 100*(j+1)>row:
         for i in range((100*j)+1, row+1):
